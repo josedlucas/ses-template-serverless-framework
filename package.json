@@ -1,7 +1,7 @@
 {
-  "name": "@haftahave/serverless-ses-template",
+  "name": "@josedlucas/ses-template-serverless-framework",
   "private": false,
-  "version": "4.0.6",
+  "version": "4.0.6.2",
   "description": "Serverless template sync plugin for Amazon Simple Email Service",
   "keywords": [
     "serverless",
@@ -10,21 +10,14 @@
     "plugin"
   ],
   "bugs": {
-    "url": "https://github.com/haftahave/serverless-ses-template/issues"
+    "url": "https://github.com/josedlucas/ses-template-serverless-framework/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haftahave/serverless-ses-template.git"
+    "url": "git+https://github.com/josedlucas/ses-template-serverless-framework.git"
   },
   "license": "MIT",
-  "author": "Hafta Have Inc <hello@haftahave.com>",
-  "maintainers": [
-    "Sergii Kovalev <enasik@gmail.com> (https://github.com/Enase)"
-  ],
-  "contributors": [
-    "Arseny Yankovsky (https://github.com/ArsenyYankovsky)",
-    "Mike Cousins <mike@cousins.io> (https://mike.cousins.io)"
-  ],
+  "author": "Jose D'lucas <jsdlcs266@gmal.com>",
   "main": "src/index.cjs",
   "directories": {
     "example": "examples",
@@ -75,5 +68,5 @@
     "node": ">= 10.12.0",
     "npm": ">= 6.14.4"
   },
-  "homepage": "https://github.com/haftahave/serverless-ses-template#readme"
+  "homepage": "https://github.com/josedlucas/ses-template-serverless-framework#readme"
 }
