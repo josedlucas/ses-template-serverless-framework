@@ -1,11 +1,9 @@
-import { createRequire, module } from 'module';
-const require = createRequire(import.meta.url);
-const chalk = require('chalk');
-const path = require('path');
-const Table = require('cli-table');
-const commandsConfig = require('./commands-config');
+import chalk from 'chalk';
+import path from 'path';
+import Table from 'cli-table';
+import commandsConfig from './commands-config';
 
-const defaultSesTemplatesConfigFilePath = './ses-email-templates/index.cjs';
+const defaultSesTemplatesConfigFilePath = './ses-email-templates/index.js';
 const defaultSesTemplatesDeployHook = 'before:deploy:deploy';
 
 class ServerlessSesTemplate {
@@ -619,4 +617,4 @@ class ServerlessSesTemplate {
   }
 }
 
-module.exports = ServerlessSesTemplate;
+export default ServerlessSesTemplate;

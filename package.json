@@ -1,6 +1,6 @@
 {
   "name": "@josedlucas/ses-template-serverless-framework",
-  "version": "4.0.7",
+  "version": "4.0.8",
   "description": "Serverless template sync plugin for Amazon Simple Email Service",
   "keywords": [
     "serverless",
@@ -17,7 +17,7 @@
   },
   "license": "MIT",
   "author": "Jose D'lucas <jsdlcs266@gmal.com>",
-  "main": "src/index.cjs",
+  "main": "src/index.js",
   "directories": {
     "example": "examples",
     "test": "tests"

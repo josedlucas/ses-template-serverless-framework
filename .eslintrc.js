@@ -94,7 +94,7 @@ module.exports = {
       },
     },
     {
-      files: ['src/index.cjs'],
+      files: ['src/index.js'],
       rules: {
         'filenames/match-exported': OFF,
       },
