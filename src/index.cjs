@@ -5,7 +5,7 @@ const path = require('path');
 const Table = require('cli-table');
 const commandsConfig = require('./commands-config');
 
-const defaultSesTemplatesConfigFilePath = './ses-email-templates/index.js';
+const defaultSesTemplatesConfigFilePath = './ses-email-templates/index.cjs';
 const defaultSesTemplatesDeployHook = 'before:deploy:deploy';
 
 class ServerlessSesTemplate {

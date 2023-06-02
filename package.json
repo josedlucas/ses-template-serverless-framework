@@ -25,7 +25,7 @@
     "Arseny Yankovsky (https://github.com/ArsenyYankovsky)",
     "Mike Cousins <mike@cousins.io> (https://mike.cousins.io)"
   ],
-  "main": "src/index.js",
+  "main": "src/index.cjs",
   "directories": {
     "example": "examples",
     "test": "tests"

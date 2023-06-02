@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const sinon = require('sinon');
 const chai = require('chai');
-const ServerlessSesTemplate = require('../src/index');
+const ServerlessSesTemplate = require('../src');
 
 const { expect } = chai;
 const expectedTextPart = 'Hello world!\nSee image here: https://{{asset_domain}}/demo.jpg';

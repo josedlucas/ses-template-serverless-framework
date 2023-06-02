@@ -43,7 +43,7 @@ plugins:
 custom:
   sesTemplates:
     addStage: true                             # Specifies whether to add stage to template name (default false)
-    configFile: './custom-config-file/path.js' # Config file path (default './ses-email-templates/index.js')
+    configFile: './custom-config-file/path.js' # Config file path (default './ses-email-templates/index.cjs')
     deployHook: 'after:deploy:deploy'          # Specifies serverless lifecycle event plugin use to deploy templates (default 'before:deploy:deploy')
     disableAutoDeploy: true                    # Specifies whether to sync templates while sls deploy (default false)
     region: 'us-west-2'                        # Specifies AWS region for SES templates (not required)
@@ -81,7 +81,7 @@ Real world example see [here](examples/asset-management/ses-email-templates/inde
 
 - CLI argument named `sesTemplateConfig`  - top priority
 - `serverless.yml` plugin configuration param named `configFile`
-- fallback to default `./ses-email-templates/index.js`
+- fallback to default `./ses-email-templates/index.cjs`
 
 ## Usage and command line options
 
