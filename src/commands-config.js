@@ -1,3 +1,4 @@
+import { module } from 'module';
 module.exports = {
   'ses-template': {
     usage: 'Manage AWS SES templates',

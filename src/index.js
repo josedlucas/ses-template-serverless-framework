@@ -1,3 +1,5 @@
+import { createRequire, module } from 'module';
+const require = createRequire(import.meta.url);
 const chalk = require('chalk');
 const path = require('path');
 const Table = require('cli-table');
