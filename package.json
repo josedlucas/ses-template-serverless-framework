@@ -1,6 +1,5 @@
 {
   "name": "@josedlucas/ses-template-serverless-framework",
-  "private": false,
   "version": "4.0.7",
   "description": "Serverless template sync plugin for Amazon Simple Email Service",
   "keywords": [
@@ -22,6 +21,9 @@
   "directories": {
     "example": "examples",
     "test": "tests"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "coverage_report": "nyc report --reporter=html",
