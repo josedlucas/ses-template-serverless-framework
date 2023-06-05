@@ -1,7 +1,8 @@
 import chalk from 'chalk';
 import path from 'path';
 import Table from 'cli-table';
-import commandsConfig from './commands-config';
+import commandsConfig from './commands-config.js';
+
 
 const defaultSesTemplatesConfigFilePath = './ses-email-templates/index.js';
 const defaultSesTemplatesDeployHook = 'before:deploy:deploy';
@@ -90,7 +91,7 @@ class ServerlessSesTemplate {
         custom: {
           sesTemplates: {
             region: sesTemplatesRegion,
-            removeMissed = false,
+            removeMissed = true,
             addStage = false,
             configFile = defaultSesTemplatesConfigFilePath,
             disableAutoDeploy = false,
@@ -131,8 +132,8 @@ class ServerlessSesTemplate {
     try {
       /* eslint-disable import/no-dynamic-require */
       /* eslint-disable global-require */
-      const configFunction = require(fileFullPath);
-      this.configuration = await configFunction(this.serverless, this.options);
+      const configFunction = await import(fileFullPath);
+      this.configuration = await configFunction.default(this.serverless, this.options);
       /* eslint-enable global-require */
       /* eslint-enable import/no-dynamic-require */
     } catch (e) {

@@ -1,6 +1,6 @@
 {
   "name": "@josedlucas/ses-template-serverless-framework",
-  "version": "4.0.8",
+  "version": "4.0.15",
   "description": "Serverless template sync plugin for Amazon Simple Email Service",
   "keywords": [
     "serverless",
@@ -8,6 +8,7 @@
     "Amazon Simple Email Service",
     "plugin"
   ],
+  "type": "module",
   "bugs": {
     "url": "https://github.com/josedlucas/ses-template-serverless-framework/issues"
   },

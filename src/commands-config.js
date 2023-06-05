@@ -1,5 +1,4 @@
-import { module } from 'module';
-module.exports = {
+export default {
   'ses-template': {
     usage: 'Manage AWS SES templates',
     lifecycleEvents: [
